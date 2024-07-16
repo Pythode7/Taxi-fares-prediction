@@ -24,6 +24,8 @@ non-generous tippers that exist in the data set.
 |---|---|---|---|---|
 |0.04667|	7.108085|	2.881468|	0.132942|	-0.04049|    
 
+The model achieves an R-squared of 0.85, signifying that 85% of the variance in the target variable is explained by the model's features. This suggests a good fit between the model and the data.   
+
 The coefficients reveal that mean_distance was the feature with the greatest effect on the model's prediction. Because the data used to train the model was standardized with 
 StandardScaler() withs std of 3.566607, the modelbuil relinear regression model is interpreted as "With holding the other variables constant, for every 1 miles change in mean distance, 
 the fare amount increases by a mean of $2 (7.13/3.566607).    
