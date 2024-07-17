@@ -2,9 +2,10 @@
 
 ## Overview
 The goal of the project was to create a multiple liniear regression to predict fare for each trip and a tree-based model to predict high rider gratuity or not. The 
-purpose of these models is to find ways to generate more revenue for taxi cab drivers. This project utilized yellow taxi trips taken in New York City during 2017. 
-The final random forest model performed with 86% accuracy and 72% precision determining what features were most important in separating low tippers from high tippers. 
-Based on the model, the duration, distance, and cost of the trip were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). 
+purpose of these models is to find ways to generate more revenue for taxi cab drivers. This project utilized yellow taxi trips taken in New York City during 2017. A multiple 
+linear regression model with an R-squared of 0.85 was built to predict fare for each trip. On average,the fare increases by approximate $2 for every 1 mile increase in distance. 
+The final random forest model performed with 71% accuracy and 69% precision determining what features were most important in separating low tippers from high tippers. 
+Based on the model, the VenderID, duration, distance, and cost of the trip were most influential in determining a generous tipper (>20%) vs a non-generous one (<20%). 
 
 ## Business Understanding 
 According to salary.com the average salary for a New York Taxi Driver is around $45,000. This salary is significantly low compared to a median rent value of $6,500 per month. 
@@ -27,7 +28,7 @@ non-generous tippers that exist in the data set.
 The model achieves an R-squared of 0.85, signifying that 85% of the variance in the target variable is explained by the model's features. This suggests a good fit between the model and the data.   
 
 The coefficients reveal that mean_distance was the feature with the greatest effect on the model's prediction. Because the data used to train the model was standardized with 
-StandardScaler() withs std of 3.566607, the modelbuil relinear regression model is interpreted as "With holding the other variables constant, for every 1 miles change in mean distance, 
+StandardScaler() withs std of 3.566607, the modelbuil relinear regression model is interpreted as "With holding the other variables constant, for every 1 mile change in mean distance, 
 the fare amount increases by a mean of $2 (7.13/3.566607).    
 
 **_Metrics and feature importance of the random forest model_**    
